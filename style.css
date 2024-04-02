@@ -1,0 +1,203 @@
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+
+@font-face {
+  font-family: Roboto Bold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Norse Bold;
+  src: url(fonts/Norse-Bold.otf);
+}
+:root {
+    --green: #596D48;
+    --light-gray: #E5E7EB;
+    --white: #F9FAFB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.side-banner {
+    flex: 1;
+    background: url(assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.side-banner .logo {
+    position: relative;
+    top: 85px;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, .5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.side-banner .logo img {
+    width: 5rem;
+}
+
+.side-banner .logo p {
+    color: white;
+    font-family: "Norse Bold", sans-serif;
+    font-size: 5rem;
+}
+
+.side-banner .caption {
+    position: absolute;    
+    bottom: 5px;
+    color: white;
+    font-size: .7rem;
+    width: 100%;
+    text-align: center;
+}
+
+.caption a:visited,
+.caption a:link {
+    color: white;
+}
+
+.main {
+    flex: 2;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero p,
+.hero em {
+    font-family: "Roboto Bold", sans-serif;
+}
+
+.hero p {
+    max-width: 50ch;
+}
+
+.hero p:first-child {
+    margin-bottom: 15px;
+}
+
+form {
+    flex: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.form-details {
+    /* border: 1px solid #ccc; */
+    padding: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.form-details p {
+    padding: 0 30px;
+    font-weight: 600;
+}
+
+.form-details>p {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row>p {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row label {
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-row input {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid var(--light-gray);
+    color: black;
+    outline: none;
+}
+
+.form-row input::placeholder {
+    color: #ccc;
+}
+
+.form-row input:focus {
+    border-color: cornflowerblue;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.form-row input:valid {
+    background-color: none;
+}
+
+.form-row input:invalid {
+    border-color: red;
+}
+
+
+.create-acc {
+    flex: 1;
+    padding: 20px 30px;
+}
+
+.create-acc button {
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--green);
+    color: white;
+    border: 1px solid var(--green);
+}
+
+.create-acc button:hover {
+    cursor: pointer;
+    /* background-color: mediumseagreen; */
+}
+
+
+.create-acc p {
+    font-size: 0.8rem;
+}
+
+.create-acc a {
+    font-weight: 600;
+    color: var(--green);
+    text-decoration: none;
+}
